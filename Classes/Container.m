@@ -141,7 +141,7 @@ classdef Container < handle & matlab.mixin.Heterogeneous
                 obj  Container
                 file
             end
-            fprintf(file, TextHelper.Spaces(4) + "restart: unless-stopped\n");
+            fprintf(file, TextHelper.Spaces(4) + "restart: no\n");
         end
 
         function printDependsOn(obj, file)

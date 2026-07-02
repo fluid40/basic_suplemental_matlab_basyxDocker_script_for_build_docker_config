@@ -14,7 +14,7 @@ classdef AasWebUiContainer < Container
 
             obj@Container(network);
             obj.setNameInNetwork("aas-web-ui");
-            obj.image = "eclipsebasyx/aas-gui:SNAPSHOT";
+            obj.image = "eclipsebasyx/aas-gui:SNAPSHOT-20260702-104713-e9f6e73";
             obj.addEnvironment("AAS_REGISTRY_PATH: http://localhost:" + num2str(9080+10*obj.network.count) + "/shell-descriptors");
             obj.addEnvironment("SUBMODEL_REGISTRY_PATH: http://localhost:" + num2str(9081+10*obj.network.count) + "/submodel-descriptors");
             obj.addEnvironment("AAS_REPO_PATH: http://localhost:" + num2str(8070+10*obj.network.count) + "/shells");

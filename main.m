@@ -10,7 +10,7 @@ if ~isfolder(path)
     mkdir(path)
 end
 
-nNetworks = 7;
+nNetworks = 5;
 
 netWorks = createArray(1,nNetworks,"Network");
 
